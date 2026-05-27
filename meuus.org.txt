@@ -1,0 +1,39 @@
+;;
+;; Domain:     meuus.org.
+;; Exported:   2026-05-26 23:48:31
+;;
+;; This file is intended for use for informational and archival
+;; purposes ONLY and MUST be edited before use on a production
+;; DNS server.  In particular, you must:
+;;   -- update the SOA record with the correct authoritative name server
+;;   -- update the SOA record with the contact e-mail address information
+;;   -- update the NS record(s) with the authoritative name servers for this domain.
+;;
+;; For further information, please consult the BIND documentation
+;; located on the following website:
+;;
+;; http://www.isc.org/
+;;
+;; And RFC 1035:
+;;
+;; http://www.ietf.org/rfc/rfc1035.txt
+;;
+;; Please note that we do NOT offer technical support for any use
+;; of this zone data, the BIND name server, or any other third-party
+;; DNS software.
+;;
+;; Use at your own risk.
+;; SOA Record
+meuus.org	3600	IN	SOA	damiete.ns.cloudflare.com. dns.cloudflare.com. 2053150591 10000 2400 604800 3600
+
+;; NS Records
+meuus.org.	86400	IN	NS	damiete.ns.cloudflare.com.
+meuus.org.	86400	IN	NS	irma.ns.cloudflare.com.
+
+;; CNAME Records
+meuus.org.	600	IN	CNAME	7cbb8d53a1aeac6d.vercel-dns-017.com. ; cf_tags=cf-proxied:false
+
+;; TXT Records
+meuus.org.	1	IN	TXT	"v=spf1 ~all"
+meuus.org.	1	IN	TXT	"v=spf1 +all"
+_vercel.meuus.org.	600	IN	TXT	"vc-domain-verify=meuus.org,f12cf7d4709c7ad1d333,dc"
